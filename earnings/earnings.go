@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-func Earnings(client *finnhub.DefaultApiService) (finnhub.EarningsCalendar, *http.Response, error) {
+func Earnings(client *finnhub.DefaultApiService, from, to string) (finnhub.EarningsCalendar, *http.Response, error) {
 	earningsCalendar, resp, err := client.EarningsCalendar(context.Background()).
-		From("2022-08-15").To("2022-08-30").Execute()
+		From(from).To(to).Execute()
 	return earningsCalendar, resp, err
 }
