@@ -9,8 +9,8 @@ import (
 
 func TestEarnings(t *testing.T) {
 
-	from := time.Now().Format("2006-01-02")
-	to := time.Now().AddDate(0, 0, 15).Format("2006-01-02")
+	from := time.Now().AddDate(0, 0, -10).Format("2006-01-02")
+	to := time.Now().AddDate(0, 0, 1).Format("2006-01-02")
 	earningsCalendar, _, err := Earnings(client.Client(), from, to)
 	if err != nil {
 		t.Error(err)
