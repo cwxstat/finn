@@ -1,8 +1,11 @@
-module github.com/cwxstat/finn
+module finn
 
 go 1.19
 
-require github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.13
+require (
+	github.com/Finnhub-Stock-API/finnhub-go/v2 v2.0.14
+	github.com/cwxstat/finn v0.0.0-20220821153523-40aaba8b98e8
+)
 
 require (
 	github.com/golang/protobuf v1.4.2 // indirect
