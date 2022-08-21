@@ -1,7 +1,7 @@
 package client
 
 import (
-	finnhub "github.com/Finnhub-Stock-API/finnhub-go/v2"
+	"github.com/Finnhub-Stock-API/finnhub-go/v2"
 	"os"
 )
 
